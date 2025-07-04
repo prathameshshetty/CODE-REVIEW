@@ -1,12 +1,53 @@
-# React + Vite
+# AI Code Reviewer – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the React frontend for the AI Code Reviewer project. It provides a code editor interface for users to submit code and view AI-generated reviews.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Live Code Editor:** Edit code with syntax highlighting (PrismJS).
+- **One-Click Review:** Submit code for review with a single button.
+- **Markdown Rendering:** AI feedback is displayed with formatting and code highlighting.
+- **Responsive Design:** Modern, user-friendly layout.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [PrismJS](https://prismjs.com/)
+- [react-simple-code-editor](https://github.com/satya164/react-simple-code-editor)
+- [react-markdown](https://github.com/remarkjs/react-markdown)
+- [axios](https://axios-http.com/)
+
+## Setup
+
+1. **Install dependencies:**
+   ```sh
+   cd Frontend
+   npm install
+   ```
+
+2. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+3. **Open in browser:**
+   Visit [http://localhost:5173](http://localhost:5173) (default Vite port).
+
+## Configuration
+
+- The frontend expects the backend API to be running at `http://localhost:3000`.
+- Update the API URL in [`src/App.jsx`](src/App.jsx) if your backend runs elsewhere.
+
+## Scripts
+
+- `npm run dev` – Start development server
+- `npm run build` – Build for production
+- `npm run preview` – Preview production build
+- `npm run lint` – Run ESLint
+
+---
+
+## License
+
+MIT
